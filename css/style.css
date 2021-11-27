@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   background: #F3F7FA;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   max-width: 1000px;
   margin: auto;
 }
@@ -155,8 +156,7 @@ label {
 .wrapper__ticket {
   position: absolute;
   top: 60px;
-  left: 211px;
-  margin-left: 20px;
+  left: 232px;
 }
 
 
@@ -228,6 +228,20 @@ label {
 }
 
 @media (max-width: 767px) {
+
+  .container {
+    width: 516px;
+    max-width: 100%
+  }
+
+  .header {
+    display: none;
+  }
+
+  .content{
+    margin-top: 10px;
+  }
+
   .aside {
     display: none;
     position: absolute;
@@ -247,6 +261,7 @@ label {
     border: none;
     width: 50px;
     height: 50px;
+    margin-top: 10px;
     margin-left: 10px;
     cursor: pointer;
   }
@@ -255,7 +270,6 @@ label {
     border: none;
     border-radius: 0;
     height: auto;
-    display: block;
   }
 
   .tablinks {
@@ -265,41 +279,78 @@ label {
     margin-top: 10px;
   }
 
+  .tickets__card{
+    margin-bottom: 20px;
+  }
+
   .content {
     justify-content: center;
   }
 
   .wrapper__ticket {
-    top: 180px;
-    left: 108px;
+    margin-left: 0;
+    top: 80px;
+    left:  0px;
+    /*width: calc(63.44vw - 30px);*/
+    width: 486px;
+  }
+
+  .ticket__header {
+    width: 100%;
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 516px) {
+  
+  .container {
+    width: 100vw;
+  }
+  .wrapper__ticket {
+    width: calc(100vw - 30px);
+  }
+}
 
-  .tab {
-    display: flex;
+@media (max-width: 486px) {
+  .container{
+    width: 100vw;
+  }
+
+  .wrapper__ticket{
+    width: calc(100vw - 30px);
+  }
+  
+}
+@media (max-width: 399px) {
+
+  .tablinks {
+    padding: 15px 5px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  .tickets__card{
+    padding-bottom: 15px;
   }
 
   .tablinks {
-    margin: 0;
-    padding: 0;
+    font-size: 10px;
   }
 
-  .wrapper__ticket {
-    top: 80px;
-    left: -20px;
-    right: 1px;
-
+  .price{
+    margin: 15px 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
-  .ticket__back, .ticket__header, .ticket__there {
-    width: 340px;
+  .city, .way, .transfer-namber {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .ticket__back{
+    margin-bottom: 0;
   }
 
-  .tickets__card {
-    width: 334px;
-  }
 }
 
 

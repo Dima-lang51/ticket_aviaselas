@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <title>Avia Sales</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <title>Avia Sales</title>
 </head>
+
 <body>
-  
+
   <header class="header">
     <div class="container">
       <div class="header__logo">
@@ -26,12 +28,12 @@
       <section class="content">
 
         <button class="mobil__menu">
-            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="0.5" x2="15" y2="0.5" stroke="black"/>
-              <line y1="4.5" x2="15" y2="4.5" stroke="black"/>
-              <line y1="8.5" x2="15" y2="8.5" stroke="black"/>
-            </svg>
-          </button>
+          <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="0.5" x2="15" y2="0.5" stroke="black" />
+            <line y1="4.5" x2="15" y2="4.5" stroke="black" />
+            <line y1="8.5" x2="15" y2="8.5" stroke="black" />
+          </svg>
+        </button>
 
         <aside class="aside aside__filter">
 
@@ -43,10 +45,10 @@
             </li>
             <li class="li">
               <input class="filter" type="checkbox" id="direct" value="0" onchange="filterTickets()">
-              <label for="direct">Без  пересадок</label>
+              <label for="direct">Без пересадок</label>
             </li>
             <li class="li">
-              <input class="filter"  type="checkbox" id="one-stop" value="1" onchange="filterTickets()">
+              <input class="filter" type="checkbox" id="one-stop" value="1" onchange="filterTickets()">
               <label for="one-stop">1 пересадка</label>
             </li>
             <li class="li">
@@ -65,12 +67,13 @@
           <button class="tablinks" id="quick" onclick="renderTickets(event, 'quick')">Самый быстрый</button>
         </div>
         <section class="wrapper__ticket" id="cheapest-ticket">
-			  </section>
+        </section>
       </section>
     </div>
   </div>
-  
+
 
   <script src="app.js"></script>
 </body>
+
 </html>
